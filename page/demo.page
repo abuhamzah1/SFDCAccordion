@@ -1,0 +1,24 @@
+
+<apex:page sidebar="false" controller="repeatCon">
+      
+     <apex:form >  
+    <apex:sectionHeader title="Easy jQuery Accordion" subtitle="Jquery Accordion for Visualforce Pages" />
+    
+    <apex:repeat value="{!strings}" var="string" id="theRepeat">
+    <c:Accordion >
+        <c:AccordionSection title="Section "> 
+           <apex:pageBlock title="Page block" mode="edit " id="pb">
+               <apex:pageBlockSection title="Edit/Select Job Detail Record Type" columns="1" id="rt"  > 
+                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. 
+                    Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.
+                    Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. 
+                    Vestibulum a velit eu ante scelerisque vulputate.  
+                </apex:pageBlockSection>   
+            </apex:pageBlock> 
+            </c:AccordionSection>
+    </c:Accordion>
+     </apex:repeat>
+
+   
+    </apex:form> 
+</apex:page>
